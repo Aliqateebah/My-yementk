@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مأرب مايكروتك برو بلس</title>
+    <link rel="stylesheet" href="style.css"> <!-- ملف تنسيق CSS خارجي -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>مأرب مايكروتك برو بلس</h1> <!-- شعار التطبيق -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#settings">الإعدادات</a></li>
+                <li><a href="#connection">الاتصال</a></li>
+                <li><a href="#help">المساعدة</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="devices">
+            <h2>قائمة الأجهزة</h2>
+            <ul>
+                <li>جهاز 1 - متصل</li>
+                <li>جهاز 2 - غير متصل</li>
+                <li>جهاز 3 - متصل</li>
+            </ul>
+            <button id="add-device">إضافة جهاز جديد</button>
+        </section>
+
+        <section id="connection">
+            <h2>صفحة الاتصال</h2>
+            <form>
+                <label for="ip-address">عنوان الـ IP:</label>
+                <input type="text" id="ip-address" required>
+
+                <label for="username">اسم المستخدم:</label>
+                <input type="text" id="username" required>
+
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" required>
+
+                <label for="protocol">اختيار البروتوكول:</label>
+                <select id="protocol">
+                    <option value="TCP">TCP</option>
+                    <option value="UDP">UDP</option>
+                </select>
+
+                <button type="submit" id="connect-button">الانضمام إلى الاتصال</button>
+            </form>
+        </section>
+
+        <section id="settings">
+            <h2>صفحة الإعدادات</h2>
+            <h3>إعدادات الشبكة</h3>
+            <div>
+                <label><input type="radio" name="network" value="dhcp"> DHCP</label>
+                <label><input type="radio" name="network" value="static"> Static IP</label>
+            </div>
+
+            <h3>إعدادات الأمان</h3>
+            <div>
+                <label><input type="checkbox" name="firewall"> تفعيل الجدار الناري</label>
+                <label><input type="checkbox" name="vpn"> تفعيل VPN</label>
+            </div>
+
+            <h3>تحديث التطبيق</h3>
+            <div>
+                <label><input type="checkbox" name="auto-update"> تحديث تلقائي</label>
+                <label><input type="checkbox" name="manual-update"> تحديث يدوي</label>
+            </div>
+        </section>
+
+        <section id="help">
+            <h2>صفحة المساعدة والدعم</h2>
+            <h3>أسئلة شائعة</h3>
+            <ul>
+                <li>كيف أضيف جهازًا جديدًا؟</li>
+                <li>كيف أغير إعدادات الشبكة؟</li>
+            </ul>
+
+            <h3>الدعم الفني</h3>
+            <p>يمكنك التواصل مع فريق الدعم الفني لدينا عبر البريد الإلكتروني support@example.com</p>
+
+            <h3>دليل المستخدم</h3>
+            <p>يمكنك تنزيل دليل المستخدم <a href="#">هنا</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2023 مأرب مايكروتك برو بلس</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- ملف جافا سكريبت خارجي -->
+</body>
+</html>
