@@ -1,0 +1,102 @@
+
+/* style.css */
+
+/* إعدادات عامة */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* رأس الصفحة */
+header {
+    background: #007BFF;  /* لون الخلفية */
+    color: #ffffff;        /* لون النص */
+    padding: 20px 0;      /* مساحة داخلية */
+    text-align: center;    /* محاذاة للنص */
+}
+
+header h1 {
+    margin: 0; /* إزالة الهامش */
+}
+
+/* شريط التنقل */
+nav ul {
+    list-style: none;      /* إزالة النقاط */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;       /* عرض العناصر في سطر */
+    margin-right: 15px;   /* مسافة بين العناصر */
+}
+
+nav a {
+    color: #ffffff;       /* لون النص */
+    text-decoration: none; /* إزالة التسطير */
+    font-weight: bold;    /* سمك خط */
+}
+
+/* المحتوى الرئيسي */
+main {
+    max-width: 800px;     /* تحديد العرض الأقصى */
+    margin: 20px auto;    /* مركزي */
+    padding: 20px;
+    background: #ffffff;  /* لون الخلفية */
+    border-radius: 5px;   /* زوايا مستديرة */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* ظل */
+}
+
+/* أقسام المحتوى */
+section {
+    margin-bottom: 20px; /* مساحة بين الأقسام */
+}
+
+section h2 {
+    color: #007BFF; /* لون العنوان */
+}
+
+/* أجهزة التحذير والاتصال */
+form {
+    display: grid; /* استخدام الشبكة */
+    gap: 10px;    /* فراغ بين العناصر */
+}
+
+label {
+    display: block; /* عرض العناصر في صف واحد */
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    padding: 10px; /* مساحة داخلية */
+    border: 1px solid #ccc; /* حدود */
+    border-radius: 5px;      /* زوايا مستديرة */
+}
+
+button {
+    background: #28a745; /* لون زر الاتصال */
+    color: white;        /* لون نص الزر */
+    border: none;        /* إزالة الحدود */
+    padding: 10px 15px;  /* مساحة داخل الزر */
+    border-radius: 5px;  /* زوايا مستديرة */
+    cursor: pointer;      /* تغيير شكل المؤشر */
+}
+
+button:hover {
+    background: #218838; /* تدرج لون الزر عند التمرير عليه */
+}
+
+/* تذييل الصفحة */
+footer {
+    text-align: center; /* محاذاة للنص */
+    padding: 10px 0;   /* مساحة داخلية */
+    background: #007BFF; /* لون الخلفية */
+    color: #ffffff;     /* لون النص */
+    position: relative;  /* موضع النسبي */
+    bottom: 0;          /* محاذاة للأسفل */
+    width: 100%;        /* تحديدالعرض */
+}
